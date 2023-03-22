@@ -35,9 +35,57 @@
                 <&kp>;
 
             #binding-cells = <2>;
-            quick-tap-ms = <500>;
-            tapping-term-ms = <800>;
+            quick-tap-ms = <400>;
+            tapping-term-ms = <600>;
             global-quick-tap;
+        };
+        ltd: ltd {
+            compatible = "zmk,behavior-tap-dance";
+            label = "LTD";
+            #binding-cells = <0>;
+            bindings =
+                <&lt 2 BACKSPACE>,
+                <&kp BACKSPACE>;
+        };
+    };
+
+    combos {
+        compatible = "zmk,combos";
+
+        left_parenthesis {
+            bindings = <&kp LEFT_PARENTHESIS>;
+            key-positions = <3 4>;
+            timeout-ms = <50>;
+        };
+
+        right_parenthesis {
+            bindings = <&kp RIGHT_PARENTHESIS>;
+            key-positions = <5 6>;
+            timeout-ms = <50>;
+        };
+
+        left_bracket {
+            bindings = <&kp LEFT_BRACKET>;
+            key-positions = <13 14>;
+            timeout-ms = <50>;
+        };
+
+        right_bracket {
+            bindings = <&kp RIGHT_BRACKET>;
+            key-positions = <16 15>;
+            timeout-ms = <50>;
+        };
+
+        left_brace {
+            bindings = <&kp LEFT_BRACE>;
+            key-positions = <23 24>;
+            timeout-ms = <50>;
+        };
+
+        new_combo {
+            bindings = <&kp RIGHT_BRACE>;
+            key-positions = <25 26>;
+            timeout-ms = <50>;
         };
     };
 
@@ -63,10 +111,10 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-      &kp Q        &kp W         &kp E          &kp R          &kp T             &kp Y            &kp U         &kp I        &kp O           &kp P
-&gpt LWIN A  &gpt LALT S  &gpt LCTRL D  &gpt LSHIFT F          &kp G             &kp H    &gpt RSHIFT J  &gpt RCTRL K  &gpt RALT L  &gpt RWIN SEMI
-      &kp Z        &kp X         &kp C          &kp V          &kp B             &kp N            &kp M     &kp COMMA      &kp DOT        &kp FSLH
-                                          &lt 1 SPACE  &tab_esc_ctrl  &mt LSHIFT ENTER  &lt 2 BACKSPACE
+      &kp Q        &kp W         &kp E          &kp R          &kp T             &kp Y          &kp U         &kp I        &kp O           &kp P
+&gpt LWIN A  &gpt LALT S  &gpt LCTRL D  &gpt LSHIFT F          &kp G             &kp H  &gpt RSHIFT J  &gpt RCTRL K  &gpt RALT L  &gpt RWIN SEMI
+      &kp Z        &kp X         &kp C          &kp V          &kp B             &kp N          &kp M     &kp COMMA      &kp DOT        &kp FSLH
+                                          &lt 1 SPACE  &tab_esc_ctrl  &mt LSHIFT ENTER           &ltd
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp C_VOL_UP C_VOL_DN>;
@@ -119,10 +167,10 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-&kp EXCL  &kp AT  &kp HASH           &kp DLLR     &kp PRCNT  &kp CARET   &kp AMPS        &kp STAR  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS
- &kp TAB   &none     &none            &kp SQT     &kp GRAVE  &kp MINUS  &kp EQUAL        &kp LBKT     &kp RIGHT_BRACKET               &kp BSLH
-   &none   &none     &none  &kp DOUBLE_QUOTES     &kp TILDE  &kp UNDER   &kp PLUS  &kp LEFT_BRACE       &kp RIGHT_BRACE               &kp PIPE
-                                        &mo 3  &kp LEFT_ALT      &none      &none
+&kp EXCL  &kp AT  &kp HASH           &kp DLLR     &kp PRCNT      &kp CARET   &kp AMPS        &kp STAR  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS
+ &kp TAB   &none     &none            &kp SQT     &kp GRAVE      &kp MINUS  &kp EQUAL        &kp LBKT     &kp RIGHT_BRACKET               &kp BSLH
+   &none   &none     &none  &kp DOUBLE_QUOTES     &kp TILDE      &kp UNDER   &kp PLUS  &kp LEFT_BRACE       &kp RIGHT_BRACE               &kp PIPE
+                                        &mo 3  &kp LEFT_ALT  &kp BACKSPACE      &none
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp C_VOL_UP C_VOL_DN>;
