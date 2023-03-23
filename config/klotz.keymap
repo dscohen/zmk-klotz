@@ -27,7 +27,7 @@
                 <&mt LCTRL ESC>,
                 <&kp TAB>;
         };
-        gpt: global-quick-tap {
+        gqt: global-quick-tap {
             compatible = "zmk,behavior-hold-tap";
             label = "GLOBAL_QUICK_TAP";
             bindings =
@@ -46,6 +46,8 @@
             bindings =
                 <&lt 2 BACKSPACE>,
                 <&kp BACKSPACE>;
+
+            tapping-term-ms = <400>;
         };
     };
 
@@ -111,10 +113,10 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-      &kp Q        &kp W         &kp E          &kp R          &kp T             &kp Y          &kp U         &kp I        &kp O           &kp P
-&gpt LWIN A  &gpt LALT S  &gpt LCTRL D  &gpt LSHIFT F          &kp G             &kp H  &gpt RSHIFT J  &gpt RCTRL K  &gpt RALT L  &gpt RWIN SEMI
-      &kp Z        &kp X         &kp C          &kp V          &kp B             &kp N          &kp M     &kp COMMA      &kp DOT        &kp FSLH
-                                          &lt 1 SPACE  &tab_esc_ctrl  &mt LSHIFT ENTER           &ltd
+      &kp Q        &kp W         &kp E         &kp R          &kp T             &kp Y         &kp U         &kp I        &kp O           &kp P
+&gqt LGUI A  &gqt LALT S  &gqt LCTRL D  &gqt LSHFT F          &kp G             &kp H  &gqt RSHFT J  &gqt RCTRL K  &gqt RALT L  &gqt RGUI SEMI
+      &kp Z        &kp X         &kp C         &kp V          &kp B             &kp N         &kp M     &kp COMMA      &kp DOT        &kp FSLH
+                                         &lt 1 SPACE  &tab_esc_ctrl  &mt LSHIFT ENTER          &ltd
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp C_VOL_UP C_VOL_DN>;
