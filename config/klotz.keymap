@@ -167,10 +167,10 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-&kp EXCL  &kp AT  &kp HASH           &kp DLLR     &kp PRCNT      &kp CARET   &kp AMPS        &kp STAR  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS
- &kp TAB   &none     &none            &kp SQT     &kp GRAVE      &kp MINUS  &kp EQUAL        &kp LBKT     &kp RIGHT_BRACKET               &kp BSLH
-   &none   &none     &none  &kp DOUBLE_QUOTES     &kp TILDE      &kp UNDER   &kp PLUS  &kp LEFT_BRACE       &kp RIGHT_BRACE               &kp PIPE
-                                        &mo 3  &kp LEFT_ALT  &kp BACKSPACE      &none
+&kp EXCL  &kp AT  &kp HASH           &kp DLLR     &kp PRCNT  &kp CARET   &kp AMPS        &kp STAR  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS
+ &kp TAB   &none     &none            &kp SQT     &kp GRAVE  &kp MINUS  &kp EQUAL        &kp LBKT     &kp RIGHT_BRACKET               &kp BSLH
+   &none   &none     &none  &kp DOUBLE_QUOTES     &kp TILDE  &kp UNDER   &kp PLUS  &kp LEFT_BRACE       &kp RIGHT_BRACE               &kp PIPE
+                                        &mo 3  &kp LEFT_ALT    &kp DEL      &none
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp C_VOL_UP C_VOL_DN>;
