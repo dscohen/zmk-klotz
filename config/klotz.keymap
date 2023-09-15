@@ -35,8 +35,8 @@
                 <&kp>;
 
             #binding-cells = <2>;
-            quick-tap-ms = <400>;
-            tapping-term-ms = <600>;
+            quick-tap-ms = <200>;
+            tapping-term-ms = <250>;
             global-quick-tap;
         };
         ltq: ltq {
@@ -47,9 +47,9 @@
                 <&kp>;
 
             #binding-cells = <2>;
-            tapping-term-ms = <600>;
+            tapping-term-ms = <250>;
             global-quick-tap;
-            quick-tap-ms = <400>;
+            quick-tap-ms = <200>;
         };
     };
 
@@ -199,10 +199,10 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-&bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &kp KP_N7  &kp KP_N8  &kp KP_N9  &none  &kp BSPC
-&none         &none         &none         &bt BT_CLR    &out OUT_TOG  &kp KP_N4  &kp KP_N5  &kp KP_N6  &none  &none
-&none         &none         &none         &none         &none         &kp KP_N1  &kp KP_N2  &kp KP_N3  &none  &none
-                                          &none         &none         &kp KP_N0  &kp KP_N0
+&bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &none            &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp BSPC
+&none         &none         &none         &bt BT_CLR    &out OUT_TOG  &kp KP_DOT       &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &none
+&none         &none         &none         &none         &none         &kp KP_NUMBER_0  &kp KP_N1        &kp KP_NUMBER_2  &kp KP_NUMBER_3  &none
+                                          &none         &none         &none            &none
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp C_VOL_UP C_VOL_DN>;
