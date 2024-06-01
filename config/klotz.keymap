@@ -118,10 +118,10 @@
 &kp Q        &kp W        &kp E         &kp R         &kp T          &kp Y             &kp U             &kp I         &kp O        &kp P
 &gqt LGUI A  &gqt LALT S  &gqt LCTRL D  &gqt LSHFT F  &kp G          &kp H             &gqt RSHFT J      &gqt RCTRL K  &gqt RALT L  &gqt RGUI SEMI
 &kp Z        &kp X        &kp C         &kp V         &kp B          &kp N             &kp M             &kp COMMA     &kp DOT      &kp FSLH
-                                        &ltq 1 SPACE  &tab_esc_ctrl  &mt LSHIFT ENTER  &ltq 2 BACKSPACE
+                                        &ltq 1 SPACE  &kp Z  &mt LSHIFT ENTER  &ltq 2 BACKSPACE
             >;
 
-            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp C_VOL_UP C_VOL_DN>;
+            sensor-bindings = <&inc_dec_kp RIGHT LEFT &inc_dec_kp RIGHT LEFT>;
         };
 
         // ▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄
