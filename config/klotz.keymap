@@ -19,6 +19,11 @@
 
 / {
     behaviors {
+//        rot_kp: sensor_rotate_kp {
+//            compatible = "zmk,behavior-sensor-rotate-var";
+//            #sensor-binding-cells = <2>;
+//            bindings = <&kp>, <&kp>;
+//        }
         tab_esc_ctrl: tab_esc_ctrl {
             compatible = "zmk,behavior-tap-dance";
             label = "TAB_ESC_CTRL";
@@ -121,7 +126,7 @@
                                         &ltq 1 SPACE  &kp Z  &mt LSHIFT ENTER  &ltq 2 BACKSPACE
             >;
 
-            sensor-bindings = <&inc_dec_kp RIGHT LEFT &inc_dec_kp RIGHT LEFT>;
+            sensor-bindings = <&inc_dec_kp RIGHT LEFT>;
         };
 
         // ▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄
