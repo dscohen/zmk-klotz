@@ -126,7 +126,7 @@
                                         &ltq 1 SPACE  &kp Z  &mt LSHIFT ENTER  &ltq 2 BACKSPACE
             >;
 
-            sensor-bindings = <&inc_dec_kp RIGHT &inc_dec_kp LEFT>;
+            sensor-bindings = <&inc_dec_kp RIGHT LEFT &inc_dec_kp RIGHT LEFT >;
         };
 
         // ▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄
